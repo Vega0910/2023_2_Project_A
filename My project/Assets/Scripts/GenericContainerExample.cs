@@ -18,16 +18,16 @@ public class GenericContainerExample : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1))                //키보드 1을 누르면
+        if(Input.GetKeyDown(KeyCode.Alpha2))                        //키보드 1을 누르면
         {
-            intContainer.Add(Random.Range(0, 100));         //0 - 100 랜덤 숫자를 컨테이너에 넣는다.
-            DisplayContaineritems(intContainer);            //함수를 통해서 Debug.Log에 보여준다
+            intContainer.Add(Random.Range(0, 100));                 //0 - 100 랜덤 숫자를 컨테이너에 넣는다.
+            DisplayContaineritems(intContainer);                    //함수를 통해서 Debug.Log에 보여준다
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))               //키보드 1을 누르면
+        if (Input.GetKeyDown(KeyCode.Alpha2))                       //키보드 2를 누르면
         {
-            string ransdomString = "item " + Random.Range(0, 100);      //임의의 문자열을 만들어준다,
-            stringContainer.Add(ransdomString);                //0 - 100 랜덤 문자열 컨테이너에 넣는다.
-            DisplayContaineritems(stringContainer);            //함수를 통해서 Debug.Log에 보여준다.
+            string ransdomString = "item " + Random.Range(0, 100);  //임의의 문자열을 만들어준다,
+            stringContainer.Add(ransdomString);                     //0 - 100 랜덤 문자열 컨테이너에 넣는다.
+            DisplayContaineritems(stringContainer);                 //함수를 통해서 Debug.Log에 보여준다.
         }
     }
     //컨테이너에 담긴 값들을 보여주는 함수
