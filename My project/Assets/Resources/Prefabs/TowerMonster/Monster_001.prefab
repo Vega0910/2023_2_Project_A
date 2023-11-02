@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 4166632534324900985}
   - component: {fileID: 1130606626180268961}
   - component: {fileID: 5873227418501309901}
+  - component: {fileID: 3543361382451198899}
   m_Layer: 6
   m_Name: Monster_001
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,3 +113,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  speedMod: 1
+  timeSinceStart: 0
+--- !u!114 &3543361382451198899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998970479251583484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6022d45bf66c74189c9e3d394cd36c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalHealth: 9
+  moneyOnDeath: 50
